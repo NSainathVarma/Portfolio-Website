@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NSainathVarma - Computer Science and Data Science Portfolio">
+    <title>NSainathVarma - Portfolio</title>
+
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="UpperBar">
+        <div class="CenterRegion">
+            <div class="NameTag">NSainathVarma.</div>
+        </div>
+
+        <nav class="Navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="projects">Projects</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+                <li><a href="#" data-page="resume">Resume</a></li>
+            </ul>
+        </nav>
+
+        <div class="SocialMedia" aria-label="Social media links">
+            <ul>
+                <li><a href="https://github.com/NSainathVarma" aria-label="GitHub" style="color: rgb(158, 8, 158)" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/sainathvarma2003/" aria-label="LinkedIn" style="color: rgb(101, 139, 180)" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a></li>
+                <li><a href="https://x.com/sainath_varma05" aria-label="Twitter" class="icon" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/sainathvarma05/" aria-label="Instagram" style="color: rgb(254, 32, 210)" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page active">
+        <main class="Home">
+            <!-- Hero Section -->
+            <section class="Hero" id="home">
+                <div class="upperhalf">
+                    <div>
+                        <h1>Hello,<br>World<span>.</span></h1>
+                        <p class="intro">
+                            👋 My name is Sainath. I'm an aspiring developer and it's nice<br>
+                            to meet you. Check out my work below.
+                        </p>
+                    </div>
+                    <div class="ImageContainer">
+                        <img src="vecteezy_office-employee-png-with-ai-generated_27309204.png" 
+                             alt="Developer illustration" 
+                             loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <p>Scroll to Explore</p>
+                    <div class="scroll-arrow-container" aria-hidden="true"></div>
+                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section class="about-section" id="about">
+                <div class="container">
+                    <header class="section-header">
+                        <span class="section-tag">About Me</span>
+                        <h2 class="section-title">Turning Data Into Intelligence</h2>
+                        <p class="section-subtitle">Passionate about creating AI-driven solutions that make a real impact</p>
+                    </header>
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>I am a Computer Science and Data Science graduate with a strong passion for machine learning, data analytics, and AI-driven solutions. My journey in tech has been driven by curiosity and the desire to solve complex problems.</p>
+                            <p>I have hands-on experience building predictive models, deep learning systems, and interactive dashboards. My work includes brain tumor detection using CNNs, anomaly detection with LSTMs, and developing intelligent chatbots.</p>
+                            <p>I enjoy solving real-world problems through data and continuously improving my technical and analytical skills to build impactful, scalable solutions.</p>
+                        </div>
+
+                        <div class="skills-grid">
+                            <article class="skill-card">
+                                <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                                <h3>Machine Learning</h3>
+                                <p>Building predictive models and intelligent systems</p>
+                            </article>
+                            <article class="skill-card">
+                                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                                <h3>Data Analytics</h3>
+                                <p>Extracting insights from complex datasets</p>
+                            </article>
+                            <article class="skill-card">
+                                <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                                <h3>Deep Learning</h3>
+                                <p>CNNs, LSTMs, and neural networks</p>
+                            </article>
+                            <article class="skill-card">
+                                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                <h3>Development</h3>
+                                <p>Full-stack solutions and dashboards</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education-section" id="education">
+                <div class="container">
+                    <header class="section-header">
+                        <span class="section-tag">Education</span>
+                        <h2 class="section-title">My Academic Journey</h2>
+                        <p class="section-subtitle">Building a strong foundation in computer science and data science</p>
+                    </header>
+
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-content">
+                                <time class="timeline-date" datetime="2021/2025">2021 - 2025</time>
+                                <h3>Bachelor of Technology</h3>
+                                <h4>Computer Science and Data Science - Jain University, Bangalore</h4>
+                                <p>Relevant Coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Database Management, Cloud Computing.</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-content">
+                                <time class="timeline-date" datetime="2019/2021">2019 - 2021</time>
+                                <h3>12th, MPC</h3>
+                                <h4>Sri Chaitanya Jr College</h4>
+                                <p>Focus: Science and Mathematics.</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-content">
+                                <time class="timeline-date" datetime="2018/2019">2018 - 2019</time>
+                                <h3>10th, CBSE Board</h3>
+                                <h4>Edify School</h4>
+                                <p>Completed secondary education under CBSE curriculum.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills-section" id="skills">
+                <div class="container">
+                    <header class="section-header">
+                        <span class="section-tag">Technical Skills</span>
+                        <h2 class="section-title">My Toolkit</h2>
+                        <p class="section-subtitle">A comprehensive set of technologies and tools I work with to build innovative solutions</p>
+                    </header>
+
+                    <div class="skills-categories">
+                        <!-- Programming Languages -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h3 class="category-title">Programming</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-type="language">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-python"></i>
+                                    </div>
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                                <div class="skill-item" data-type="language">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-java"></i>
+                                    </div>
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-badge">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data & Analytics -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <h3 class="category-title">Data & Analytics</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-type="database">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                                <div class="skill-item" data-type="ml">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                    </div>
+                                    <span class="skill-name">Statistics</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                                <div class="skill-item" data-type="visualization">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-chart-bar"></i>
+                                    </div>
+                                    <span class="skill-name">Power BI</span>
+                                    <span class="skill-badge">Intermediate</span>
+                                </div>
+                                <div class="skill-item" data-type="visualization">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                    </div>
+                                    <span class="skill-name">Tableau</span>
+                                    <span class="skill-badge">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI & Machine Learning -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <h3 class="category-title">AI & ML</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-type="ml">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-diagram-project"></i>
+                                    </div>
+                                    <span class="skill-name">Machine Learning</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                                <div class="skill-item" data-type="ml">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <span class="skill-name">Deep Learning</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Web Development -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <h3 class="category-title">Web Development</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-type="web">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-html5"></i>
+                                    </div>
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                                <div class="skill-item" data-type="web">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                    </div>
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-badge">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer for Home Page -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">
+                        © 2025 <span class="footer-name">N Sainath Varma</span>. All rights reserved.
+                    </p>
+                    <p class="footer-tagline">Turning data into intelligence, one line of code at a time.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- PROJECTS PAGE -->
+    <div id="projects-page" class="page">
+        <main class="projects-main">
+            <!-- Projects Section -->
+            <section class="projects-section">
+                <div class="container">
+                    <header class="section-header">
+                        <span class="section-tag">Featured Work</span>
+                        <h2 class="section-title">Building Solutions That Matter</h2>
+                        <p class="section-subtitle">From concept to deployment, each project showcases my technical expertise and problem-solving skills</p>
+                    </header>
+
+                    <div class="projects-grid">
+                        <!-- Projects content remains the same -->
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="tag">Deep Learning</span>
+                                    <span class="tag">CNN</span>
+                                    <span class="tag">Healthcare</span>
+                                </div>
+                                <h3>Brain Tumor Detection System</h3>
+                                <p>Developed a convolutional neural network model for automated brain tumor detection from MRI scans, achieving 95% accuracy in classification.</p>
+                                <div class="project-tech">
+                                    <span><i class="fa-brands fa-python"></i> Python</span>
+                                    <span><i class="fa-solid fa-brain"></i> TensorFlow</span>
+                                    <span><i class="fa-solid fa-image"></i> OpenCV</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-github"></i> View Code
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="tag">LSTM</span>
+                                    <span class="tag">Time Series</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
+                                <h3>AI Market Research Agent</h3>
+                                <p>AI Market Research Agent analyzes industries, generates AI/ML use cases, and recommends relevant Kaggle datasets using real-time research and LLMs.</p>
+                                <div class="project-tech">
+                                    <span><i class="fa-brands fa-python"></i> Python</span>
+                                    <span><i class="fa-solid fa-network-wired"></i> Keras</span>
+                                    <span><i class="fa-solid fa-chart-bar"></i> Pandas</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/NSainathVarma/MultiAgent" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-github"></i> View Code
+                                    </a>
+                                    <a href="https://multiagent-nsainathvarma.streamlit.app/" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <i class="fa-solid fa-comments"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="tag">NLP</span>
+                                    <span class="tag">Chatbot</span>
+                                    <span class="tag">AI</span>
+                                </div>
+                                <h3>PDF-Chatbot</h3>
+                                <p>A Streamlit-based PDF chatbot that lets users upload documents, ask questions, and receive Gemini-powered responses with persistent chat history storage.</p>
+                                <div class="project-tech">
+                                    <span><i class="fa-brands fa-python"></i> Python</span>
+                                    <span><i class="fa-solid fa-robot"></i> NLTK</span>
+                                    <span><i class="fa-solid fa-database"></i> MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/NSainathVarma/PDF-Chatbot" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-github"></i> View Code
+                                    </a>
+                                    <a href="https://pdf-chatbot-nsainathvarma.streamlit.app/" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="tag">Visualization</span>
+                                    <span class="tag">Dashboard</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
+                                <h3>Sales Analytics Dashboard</h3>
+                                <p>Designed an interactive Power BI dashboard for real-time sales analytics, enabling data-driven decision making for business stakeholders.</p>
+                                <div class="project-tech">
+                                    <span><i class="fa-solid fa-chart-bar"></i> Power BI</span>
+                                    <span><i class="fa-solid fa-database"></i> SQL</span>
+                                    <span><i class="fa-brands fa-python"></i> Python</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-github"></i> View Code
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="tag">Machine Learning</span>
+                                    <span class="tag">Prediction</span>
+                                    <span class="tag">Regression</span>
+                                </div>
+                                <h3>Vial-Detection-Count</h3>
+                                <p>A Streamlit application that uses YOLO for vial detection and counting from images, integrates Gemini for insights, and displays annotated results interactively.</p>
+                                <div class="project-tech">
+                                    <span><i class="fa-brands fa-python"></i> Python</span>
+                                    <span><i class="fa-solid fa-diagram-project"></i> Scikit-learn</span>
+                                    <span><i class="fa-solid fa-chart-line"></i> Matplotlib</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/NSainathVarma/Vial-detection-Count/tree/main" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-github"></i> View Code
+                                    </a>
+                                    <a href="https://vial-detection-count-nsainathvarma.streamlit.app/" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">Full Stack</span>
+                                    <span class="tag">API</span>
+                                </div>
+                                <h3>Portfolio Website</h3>
+                                <p>Built a responsive portfolio website showcasing projects and skills with modern design principles and interactive elements.</p>
+                                <div class="project-tech">
+                                    <span><i class="fa-brands fa-html5"></i> HTML</span>
+                                    <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-github"></i> View Code
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer for Projects Page -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">
+                        © 2025 <span class="footer-name">N Sainath Varma</span>. All rights reserved.
+                    </p>
+                    <p class="footer-tagline">Turning data into intelligence, one line of code at a time.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact-page" class="page">
+        <main class="contact-main">
+            <section class="contact-section">
+                <div class="container">
+                    <header class="section-header">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Contact Me</h2>
+                        <p class="section-subtitle">Feel free to reach out.</p>
+                    </header>
+
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="info-card">
+                                <i class="fa-solid fa-envelope"></i>
+                                <h3>Email</h3>
+                                <p>nandimandalamsainathvarma@gmail.com</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fa-solid fa-phone"></i>
+                                <h3>Phone</h3>
+                                <p>+91 95157 76426</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h3>Location</h3>
+                                <p>Tirupati, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-container">
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="user_name">
+                                        <i class="fa-solid fa-user"></i>
+                                        Name *
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="user_name" 
+                                        name="user_name" 
+                                        placeholder="Enter your name" 
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="user_email">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        Email *
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="user_email" 
+                                        name="user_email" 
+                                        placeholder="Enter your email" 
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="user_phone">
+                                        <i class="fa-solid fa-phone"></i>
+                                        Phone (Optional)
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="user_phone" 
+                                        name="user_phone" 
+                                        placeholder="Enter your phone number">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">
+                                        <i class="fa-solid fa-message"></i>
+                                        Message *
+                                    </label>
+                                    <textarea 
+                                        id="message" 
+                                        name="message" 
+                                        rows="6" 
+                                        placeholder="Write your message here..." 
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-btn">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+
+                                <div id="form-status" class="form-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer for Contact Page -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">
+                        © 2025 <span class="footer-name">N Sainath Varma</span>. All rights reserved.
+                    </p>
+                    <p class="footer-tagline">Turning data into intelligence, one line of code at a time.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- RESUME PAGE -->
+    <div id="resume-page" class="page">
+        <main class="resume-main">
+            <section class="resume-section">
+                <div class="container">
+                    <header class="section-header">
+                        <span class="section-tag">Resume</span>
+                        <h2 class="section-title">My Professional Journey</h2>
+                        <p class="section-subtitle">Download my complete resume or view it below</p>
+                    </header>
+
+                    <!-- Download Button -->
+                    <div class="resume-download">
+                        <a href="resume.pdf" download="NSainathVarma_Resume.pdf" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <!-- PDF Viewer -->
+                    <div class="pdf-viewer-container">
+                        <embed 
+                            src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+                            type="application/pdf"
+                            class="pdf-viewer">
+                        <!-- Fallback for browsers that don't support embed -->
+                        <div class="pdf-fallback">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <p>Your browser doesn't support embedded PDFs</p>
+                            <a href="resume.pdf" target="_blank" class="fallback-download">
+                                <i class="fa-solid fa-external-link-alt"></i>
+                                Open PDF in New Tab
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer for Resume Page -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">
+                        © 2025 <span class="footer-name">N Sainath Varma</span>. All rights reserved.
+                    </p>
+                    <p class="footer-tagline">Turning data into intelligence, one line of code at a time.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
